@@ -1,0 +1,23 @@
+.table {
+  max-width:1000px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+
+  &__title{
+    border: none;
+    font-weight: inherit;
+  }
+  &__title > span {
+    font-size: 16px;
+    line-height: 26px;
+    color: #C3CAD6;
+    font-weight: inherit;
+  }
+}
+.table-bordered th,
+.table thead{
+  border: none;
+}

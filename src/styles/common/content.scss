@@ -1,0 +1,32 @@
+.content {
+  /* max-width: 1096px; */
+  padding-top: 40px;
+  flex: 1 0 auto;
+  width: 70%;
+
+  &__link {
+    color: #9cbaf0;
+    padding-right: 5px;
+
+    &--active {
+      color: #ffffff
+    }
+  }
+
+  &__link:after {
+    content: "/";
+    color: #9CBAF0;
+    font-size: 18px;
+  }
+
+  &__link:last-child:after {
+    display: none;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+  }
+
+}

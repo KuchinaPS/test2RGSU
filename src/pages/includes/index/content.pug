@@ -1,0 +1,187 @@
+div.content
+  .content__pagination
+    a(href="#").content__link Главная
+    a.content__link.content__link--active(href="#") Бронирование
+  h2.content__title Бронирование
+  .tabs.tabs__signIn
+    .tabs-triggers
+      a.tabs-triggers__item.tabs-triggers__item--active(href ="#tab-1") Мероприятия
+      a.tabs-triggers__item(href ="#tab-2") Аудитория
+      a.tabs-triggers__item(href ="#tab-3") История бронирования
+    .tabs-content
+      #tab-1.tabs-content__item.tabs-content__item--auth
+        form.tabs-content__form.form
+          .form__row
+            .form__wrap-select
+              label.form__label Выберите площадку
+                span *
+              select.form__select(required)
+                option.form__option(value="") Выберите
+                option.form__option(value=1) Ул . Лосиноостровская 24
+                option.form__option(value=2) ул. Вильгельма Пика 4
+            .form__wrap-select
+              label.form__label(for="room") Выберите помещение
+                span *
+              select.form__select(id="room" required)
+                option.form__option(value="") Выберите
+                option.form__option(value=1) Конференц-зал
+                option.form__option(value=2) Аудитория 218
+          .form__row
+            .form__table
+              .table-responsive
+                table.table.table-bordered.table-sm.table-hover
+                  thead
+                    tr
+                      th(scope='col')
+                      th.table__title(scope='col')
+                        | Понедельник
+                        br
+                        span 22.02.2020
+                      th.table__title(scope='col')
+                        | Вторник
+                        br
+                        span 22.02.2020
+                      th.table__title(scope='col')
+                        | Среда
+                        br
+                        span 22.02.2020
+                      th.table__title(scope='col')
+                        | Четверг
+                        br
+                        span 22.02.2020
+                      th.table__title(scope='col')
+                        | Пятница
+                        br
+                        span 22.02.2020
+                      th.table__title(scope='col')
+                        | Суббота
+                        br
+                        span 22.02.2020
+                  tbody
+                    tr
+                      th.table__title(scope='row') 9:00 - 10:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 10:00 - 11:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 11:00 - 12:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 12:00 - 13:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 13:00 - 14:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 14:00 - 15:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 15:00 - 16:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 16:00 - 17:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+                    tr
+                      th.table__title(scope='row') 17:00 - 18:00
+                      td
+                      td
+                      td
+                      td
+                      td
+                      td
+            .form__table-nav
+              label.form__radio-label(for="r1")
+              input.form__table-radio(id ="r1" type="radio" name="table-radio" value="1" checked)
+              label.form__radio-label(for="r2")
+              input.form__table-radio(id ="r2" type="radio" name="table-radio" value="2")
+              label.form__radio-label(for="r3")
+              input.form__table-radio(id ="r3" type="radio" name="table-radio" value="3")
+
+
+          .form__row
+              .form__item.form__item--booking
+                label.form__label(for="booking") Бронирование
+                  span *
+                .form__input-wrap
+                  input.form__input-readonly(id="booking" value="Ул . Лосиноостровская 24, Конференц-зал" readonly)
+              .form__item.form__item--date
+                label.form__label Дата
+                  span *
+                .form__input-wrap
+                  input.form__input(type="date" readonly)
+                  select.form__select
+                    option.form__option 9-00
+                    option.form__option 10-00
+                    option.form__option 11-00
+                  select.form__select
+                    option.form__option 10-00
+                    option.form__option 11-00
+              .form__item.form__item--description
+                label.form__label Название мероприятия
+                  span *
+                .form__input-wrap
+                  textarea
+              .form__item.form__item--check-list
+                label.form__label Выберите оборудование
+                  span *
+                .form__input-wrap.form__check-container
+                  .form__check-row
+                    input.form__input-check(type="checkbox" id="sound")
+                    label.form__label-check(for="sound") Звуковое оборудование
+
+                  .form__check-row
+                    input.form__input-check(type="checkbox" id="microphone")
+                    label.form__label-check(for = "microphone") Микрофон
+
+                  .form__check-row
+                    input.form__input-check(type="checkbox" id="mob-projector")
+                    label.form__label-check(for ="mob-projector") Мобильный проектор
+
+                  .form__check-row
+                    input.form__input-check(type="checkbox" id="mob-projector2")
+                    label.form__label-check(for ="mob-projector2") Мобильный проектор
+          .form__row
+            button.btn.btn__bottom(type ="submit") Забронировать
+
+
